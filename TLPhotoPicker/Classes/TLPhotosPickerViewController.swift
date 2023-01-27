@@ -52,13 +52,13 @@ extension TLPhotosPickerLogDelegate {
 }
 
 public struct TLPhotosPickerConfigure {
-    public var customLocalizedTitle: [String: String] = ["Camera Roll": "Camera Roll"]
-    public var tapHereToChange = "Tap here to change"
-    public var cancelTitle = "Cancel"
-    public var doneTitle = "Done"
-    public var emptyMessage = "No albums"
-    public var selectMessage = "Select"
-    public var deselectMessage = "Deselect"
+    public var customLocalizedTitle: [String: String] = ["Cuộn Camera": "Cuộn Camera"]
+    public var tapHereToChange = "Nhấn vào đây để thay đổi"
+    public var cancelTitle = "Hủy"
+    public var doneTitle = "Xong"
+    public var emptyMessage = "Không có albums"
+    public var selectMessage = "Chọn"
+    public var deselectMessage = "Bỏ chọn"
     public var emptyImage: UIImage? = nil
     public var usedCameraButton = true
     public var defaultToFrontFacingCamera = false
