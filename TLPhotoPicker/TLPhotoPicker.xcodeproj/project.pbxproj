@@ -150,7 +150,6 @@
 			developmentRegion = vi;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				vi,
 			);
 			mainGroup = 18465D91206E8A8B0015A715;
