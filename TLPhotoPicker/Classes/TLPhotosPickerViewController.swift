@@ -52,8 +52,8 @@ extension TLPhotosPickerLogDelegate {
 }
 
 public struct TLPhotosPickerConfigure {
-    public var customLocalizedTitle: [String: String] = ["Cuộn Camera": "Cuộn Camera"]
-    public var tapHereToChange = "Nhấn vào đây để thay đổi"
+    public var customLocalizedTitle: [String: String] = ["Cuộn camera": "Cuộn camera"]
+    public var tapHereToChange = "Nhấn để thay đổi"
     public var cancelTitle = "Hủy"
     public var doneTitle = "Xong"
     public var emptyMessage = "Không có albums"
@@ -648,19 +648,21 @@ extension TLPhotosPickerViewController: UIImagePickerControllerDelegate, UINavig
         if self.configure.allowedPhotograph {
             mediaTypes.append(kUTTypeImage as String)
         }
-        if self.configure.allowedVideoRecording {
-            mediaTypes.append(kUTTypeMovie as String)
-            picker.videoQuality = self.configure.recordingVideoQuality
-            if let duration = self.configure.maxVideoDuration {
-                picker.videoMaximumDuration = duration
-            }
-        }
+        //-- Record Video OTL remove
+        // if self.configure.allowedVideoRecording {
+        //     mediaTypes.append(kUTTypeMovie as String)
+        //     picker.videoQuality = self.configure.recordingVideoQuality
+        //     if let duration = self.configure.maxVideoDuration {
+        //         picker.videoMaximumDuration = duration
+        //     }
+        // }
         guard mediaTypes.count > 0 else {
             return
         }
         picker.cameraDevice = configure.defaultToFrontFacingCamera ? .front : .rear
         picker.mediaTypes = mediaTypes
         picker.allowsEditing = false
+        imagePicker.cameraFlashMode = .off
         picker.delegate = self
         
         // if user is on ipad using split view controller, present picker as popover
