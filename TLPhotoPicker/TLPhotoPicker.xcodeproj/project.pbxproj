@@ -147,12 +147,11 @@
 			};
 			buildConfigurationList = 18465D95206E8A8B0015A715 /* Build configuration list for PBXProject "TLPhotoPicker" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
+			developmentRegion = vi;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				vi,
-				Base,
 			);
 			mainGroup = 18465D91206E8A8B0015A715;
 			productRefGroup = 18465D9C206E8A8B0015A715 /* Products */;
