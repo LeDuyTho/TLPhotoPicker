@@ -662,7 +662,7 @@ extension TLPhotosPickerViewController: UIImagePickerControllerDelegate, UINavig
         picker.cameraDevice = configure.defaultToFrontFacingCamera ? .front : .rear
         picker.mediaTypes = mediaTypes
         picker.allowsEditing = false
-        imagePicker.cameraFlashMode = .off
+        picker.cameraFlashMode = .off
         picker.delegate = self
         
         // if user is on ipad using split view controller, present picker as popover
